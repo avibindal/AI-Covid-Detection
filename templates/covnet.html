@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/covnetd.css') }}">
+    <title>CovNet</title>
+</head>
+
+<body>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+    <div id="app_name">
+        <h1 id="title">CovNet</h1>
+        <div id="general">
+            <a class="nav" href="#">Home</a>
+            <a class="nav" href="#s">Services</a>
+            <a class="nav" href="#a">About</a>
+            <a class="nav" href="#c">Contact</a>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div id="backPage">
+        <div id="service">
+            <h2>AI-Powered Covid Detection</h2>
+            <div>
+                <button id="btn_service">Explore Service</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="upload_doc">
+        <div id="upload_box">
+            <h2 id="report_text">Upload X-ray report</h2>
+            <input type="file" id="fileInput" name='file' accept="image/*">
+            <button id="analyse_btn">Analyse</button>
+            <div id="preview"></div>
+            <p id="predictionResult"></p>
+            <a id="downloadReport" style="display: none;" download>Download Report</a>
+        </div>
+
+    </div>
+
+    <div id="about">
+        <h2>
+            <font size="7">ABOUT</font>
+        </h2>
+        <p>COVID-Detect is an AI-powered system designed for the rapid and accurate diagnosis of COVID-19 using chest
+            X-ray images. Traditional diagnostic methods, such as RT-PCR tests and manual radiographic analysis, often
+            come with challenges—long processing times, high costs, and the potential for human error. Our AI-based
+            solution addresses these issues by automating the detection process using deep learning, specifically
+            convolutional neural networks (CNNs).
+        </p>
+        <br>
+        <h3>Why AI Over Traditional Methods?</h3>
+        <br>
+        <ol>
+            <li>
+                <p><b>Speed & Efficiency:</b> Unlike RT-PCR tests, which take hours or even days for results,
+                    COVID-Detect
+                    can
+                    provide real-time diagnosis from chest X-rays in seconds.
+                </p>
+            </li>
+            <br>
+            <li>
+                <p><b>Cost-Effectiveness:</b> AI-driven analysis reduces the dependency on expensive laboratory tests
+                    and
+                    minimizes
+                    the need for highly specialized radiologists.
+                </p>
+            </li>
+            <br>
+            <li>
+                <p><b>Accuracy & Consistency:</b> Manual diagnosis is prone to subjectivity and fatigue-induced errors,
+                    whereas our
+                    model—CovNet—delivers consistent and data-driven results with high precision.
+                </p>
+            </li>
+            <br>
+            <li>
+                <p><b>Scalability:</b> In resource-limited settings, where access to testing kits and radiologists is
+                    restricted,
+                    AI-powered tools can provide rapid mass screening, aiding in early detection and containment.
+                </p>
+            </li>
+            <br>
+            <li>
+                <p><b>Improved Decision-Making:</b> By integrating AI with medical imaging, COVID-Detect enables
+                    healthcare
+                    professionals to make quicker and more informed decisions, improving patient outcomes.
+                </p>
+            </li>
+
+        </ol>
+        <br>
+        <p>
+            With a dataset of over 21,000 labeled X-ray images, including COVID-19, Normal, Pneumonia, and Lung Opacity
+            cases, our CovNet model outperforms traditional architectures like ResNet-50 and VGG-16, ensuring superior
+            classification accuracy.
+        </p>
+        <br>
+        <p>
+            Our mission is to bridge the gap between technology and healthcare, offering a reliable, fast, and scalable
+            solution for diagnosing COVID-19 and other respiratory diseases. COVID-Detect is not just a tool—it’s a step
+            toward revolutionizing medical diagnostics and making healthcare more accessible worldwide.
+        </p>
+
+    </div>
+
+    <div id="contact">
+        <div id="contact_form">
+            <h3><font size="6">Get in touch</font></h3>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input class="form_input" type="text" id="name" name="name" placeholder="" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <br>
+                    <input class="form_input" type="email" id="email" name="email" placeholder="" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    
+                    <input class="form_input" type="tel" id="phone" name="phone" placeholder="" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="query">Your Query:</label>
+                    <textarea id="query" name="query" rows="4" placeholder="Enter query" required></textarea>
+                </div>
+                <div>
+                    <button id="submit">Submit</button>
+                </div>
+            
+            </form>
+        </div>
+
+        <div id="personal_info">
+            <ul>
+                <li><bold>Sachin Malviya</bold></li>
+                <li>sachinmalviya14feb@gmail.com</li>
+            </ul>
+            <ul>
+                <li><bold>Sankeerth Latheesh</bold></li>
+                <li>sankeerthlatheesh@gmail.com</li>
+            </ul>
+            <ul>
+                <li><bold>Avi Bindal</bold></li>
+                <li>avibindal@gmail.com</li>
+            </ul>
+            <ul>
+                <li><bold>Adarsh Shukla</bold></li>
+                <li>adarshshukla@gmail.com</li>
+            </ul>
+
+        </div>
+    </div>
+
+    
+    
+
+</body>
+<footer>
+        <h4><a class="foot" href="#"><i class="fa fa-copyright" aria-hidden="true">Copy Right</i></a></h4>
+        <h4><a class="foot" href="#">Privacy Policy</a></h4>
+        <h4>Follow Us</h4>
+</footer>
+
+</html>
